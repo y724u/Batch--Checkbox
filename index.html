@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Batch-CheckBox</title>
 </head>
+
 <body>
-  
+  <section class="check">
+    <form action="#">
+      <div class="check__container">
+        <div class="check__language">
+          <div class="check__title">
+            <h1>言語</h1>
+          </div>
+          <ul class="check__list">
+            <li>
+              <input type="checkbox" name="" id="language-all" value="html">
+              <label for="language-all">全て選択</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="html" value="html">
+              <label for="html">HTML</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="css" value="html">
+              <label for="css">CSS</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="javascript" value="html">
+              <label for="javascript">JavaScript</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="ruby" value="html">
+              <label for="ruby">Ruby</label>
+            </li>
+          </ul>
+        </div>
+        <div class="check__income">
+          <div class="check__title">
+            <h1>希望収入</h1>
+          </div>
+          <ul class="check__list">
+            <li>
+              <input type="checkbox" name="" id="income-all" value="html">
+              <label for="income-all">全て選択</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="three" value="html">
+              <label for="three">~300万円</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="five" value="html">
+              <label for="five">300~500万円</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="eight" value="html">
+              <label for="eight">500~800万円</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="more" value="html">
+              <label for="more">800万円~</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="check__search">
+        <label for="serch"><input type="submit" value="検索"id="serch"></label>
+      </div>
+    </form>
+  </section>
 </body>
+
 </html>
