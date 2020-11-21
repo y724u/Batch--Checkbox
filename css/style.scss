@@ -35,9 +35,9 @@ body {
     }
   }
 
-  &__list {
-    li ~ li {
-      margin: 21px 0 0 25px;
+  &__item {
+    li {
+      margin: 10px 0 0 25px;
     }
   }
 
