@@ -505,7 +505,7 @@ body {
 }
 
 .check__item li {
-  margin: 10px 0 0 25px;
+  margin-left: 25px;
 }
 
 .check__input {
