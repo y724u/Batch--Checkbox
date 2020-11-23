@@ -2,11 +2,13 @@ $(function () {
   $('.js-all').on('click', function () {
     const target = $(this).data('target');
     const checkItem = document.getElementById(target);
-    $($(checkItem).find('input')).prop('checked', this.checked);
+    const checkList = $(checkItem).find('input');
+    $(checkList).prop('checked', this.checked);
   });
 });
 
 // $(function () {
+
 
 //   $(".js-languageItem").on('click', function () {
 //     if ($('.js-languageItem :checked').length == $('.js-languageItem :input').length) {
@@ -15,6 +17,8 @@ $(function () {
 //       $('#js-language').prop('checked', false);
 //     }
 //   });
+
+
 
 //   $(".js-checkItem input").on('click', function () {
 //     if ($('.js-checkItem :checked').length == $('.js-checkItem :input').length) {
@@ -33,7 +37,6 @@ $(function () {
 //   $('body').addClass('fixed').css({ 'top': -scrollPosition1 });
 //   return false;
 // });
-
 
 
 
