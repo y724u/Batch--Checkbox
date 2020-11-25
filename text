@@ -1,8 +1,8 @@
 $(function () {
-  $('.js-all').on('change', function () {
+  $('.js-all').on('click', function () {
     const target = $(this).data('target');
-    const $checkItem = $('#' + target)
-    const $checkInput = $($checkItem).find('input');
+    const checkItem = $('#' + target)
+    const $checkInput = $(checkItem).find('input');
     $($checkInput).prop('checked', this.checked);
   });
 
