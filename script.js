@@ -1,9 +1,11 @@
 $(function () {
   $('.js-all').on('change', function () {
-    const target = $(this).data('target');
-    const $checkItem = $('#' + target)
-    const $checkInput = $($checkItem).find('input');
-    $($checkInput).prop('checked', this.checked);
+    const $this =  $(this);
+    const target = $this.data('target');
+    // const $checkItem = $('#' + target)
+    // const $checkInput = $($checkItem).find('input');
+    const $checkInputs = $('#' + target).find('input');
+    $($checkInputs).prop('checked', $this.prop('checked'));
   });
 
   //  js-languageItemのinputが変化（チェック）が入ったら
